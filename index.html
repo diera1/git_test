@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css/style.css" />
+    <link rel="stylesheet" href="./style.css/adaptive_styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="burger-menu">
+        <div class="burger-menu-content">
+          <img
+            src="./images/cancel_btn.png"
+            alt=""
+            class="burger-menu__btn_close"
+          />
+          <input type="text" class="burger-menu__input" />
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item"><a href="Home"></a></li>
+            <li class="burger-menu__item"><a href="Services"></a></li>
+            <li class="burger-menu__item"><a href="Our Progect"></a></li>
+            <li class="burger-menu__item"><a href="About Us"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- BURGER ATSRT -->
+      <!-- BERGER END -->
+      <!-- NAVBAR START -->
+      <div class="navbar">
+        <img class="navbar__logo" src="./images/logo.png" alt="" />
+        <ul class="navbar__list">
+          <li class="list__item"><a href="#">Home</a></li>
+          <li class="list__item"><a href="#">Services</a></li>
+          <li class="list__item"><a href="#">Our Project</a></li>
+          <li class="list__item"><a href="#">About Us</a></li>
+        </ul>
+        <input type="text" class="navbar__input" />
+      </div>
+      <!-- NAVBAR END -->
+      <!-- HEADER START -->
+      <header>
+        <div class="header__block_left">
+          <h2 class="header__title_left">Build Your Awesome Platform</h2>
+          <p class="header__desc_left">
+            Enver studio is a digital studio that offers several services such
+            as UI/UX Design to developers, we will provide the best service for
+            those of you who use our services.
+          </p>
+          <button class="header__btn">
+            Our Services
+            <img src="./images/arrow-left.png" class="btn__icon" alt="" />
+          </button>
+        </div>
+        <div class="header__block_right">
+          <img src="./images/header_img.png" class="header__img" alt="" />
+          <img
+            class="vector"
+            id="vector_1"
+            src="./images/vector_1.png"
+            alt=""
+          />
+          <img
+            class="vector"
+            id="vector_2"
+            src="./images/vector_2.png"
+            alt=""
+          />
+          <img
+            class="vector"
+            id="vector_3"
+            src="./images/vector_3.png"
+            alt=""
+          />
+          <img
+            class="vector"
+            id="vector_4"
+            src="./images/vector_4.png"
+            alt=""
+          />
+        </div>
+      </header>
+      <!-- HEADER END  -->
+      <!-- PORTFOLIO BLOCK START -->
+      <div class="portfolio">
+        <h4 class="portfolio__title">Our Awesome Portfolio</h4>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <img src="./images/image1.png" alt="" />
+          </li>
+          <li class="portfolio__item">
+            <img src="./images/image2.png" alt="" />
+          </li>
+          <li class="portfolio__item">
+            <img src="./images/image3.png" alt="" />
+          </li>
+        </ul>
+        <img src="./images/pagination.png" alt="" class="portfolio__icon" />
+      </div>
+      <!-- PORTFOLIO BLOCK END -->
+
+      <!-- INFO BLOCK START -->
+
+      <div class="info-block">
+        <h4 class="info-block__title">
+          Contact us for the service you want to use
+        </h4>
+        <button class="info-block__btn">Contact us</button>
+      </div>
+      <!-- INFO BLOCK START -->
+
+      <!-- FOOTER START -->
+      <footer>
+        <img src="./images/logo.png" class="footer__logo" alt="" />
+        <ul class="footer__list">
+          <li class="footer__item">Support</li>
+          <li class="footer__item">Privasy Policy</li>
+          <li class="footer__item">Terms and Conitidions</li>
+        </ul>
+        <p class="footer__info">© 2022 Enver, All Rights Reserved</p>
+      </footer>
+      <!-- FOOTER START -->
+    </div>
+
+    <script>
+      let openBtn = document.querySelector(".navbar__btn_burger");
+      let closeBtn = document.querySelectir(".burger__btn_close");
+      let burgerMenu = document.querySelector(".burger-menu");
+      openBtn.addEventListener;
+      "click", () => (burgerMenu.style.display = "block");
+
+      closeBtn.addEventListener(
+        "click",
+        () => (burgerMenu.style.display = none)
+      );
+    </script>
+  </body>
+</html>
